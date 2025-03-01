@@ -1,0 +1,144 @@
+.card-holder {
+    width: 100%;
+    max-width: 1400px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.main-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: #1c1c1c;
+    border: 2px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 2px black;
+}
+
+.small-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.small-card {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.small-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.small-card:hover {
+    transform: scale(1.1);
+}
+
+/* Slide Buttons */
+
+button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.slide-left {
+    left: 10px;
+}
+
+.slide-right {
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.player {
+    width: 70%;
+    height: 60%;
+}
+
+.clogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid red;
+    padding: 2px;
+    background-color: white;
+}
+
+.channel_name {
+    font-size: 2rem;
+    margin: 26px 0px 10px 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .card-holder {
+        height: 300px;
+    }
+    .main-card {
+        padding: 5px;
+    }
+    .small-card {
+        width: 80px;
+        height: 80px;
+    }
+    .player {
+        width: 100%;
+        height: 50%;
+    }
+    .clogo {
+        width: 80px;
+        height: 80px;
+    }
+    .channel_name {
+        font-size: 1.5rem;
+        margin: 26px 0px 10px 16px;
+    }
+}
+
+.logo {
+    max-width: 200px;
+    max-height: 80px;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        max-width: 100px;
+        max-height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        max-width: 200px;
+        max-height: 90px;
+    }
+}
