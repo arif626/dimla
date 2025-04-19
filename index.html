@@ -105,7 +105,7 @@
                                 const nameMatch = line.match(/,(.*)/);
                                 if (logoMatch && nameMatch) {
                                     currentChannel.logo = logoMatch[0];
-                                    currentChannel.name = nameMatch[1];
+                                    currentChannel.name = nameMatch[0];
                                 }
                             } else if (line.startsWith('http')) {
                                 currentChannel.url = line.trim();
